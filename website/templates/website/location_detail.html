@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ location.location_name }}</title>
+
+    <link rel="stylesheet" href="{% static 'website/styles.css' %}">
+</head>
+
+
+<body>
+
+<div class="location-detail" style="justify-content: center; align-items: center; display: flex; flex-direction: column; margin-top: 50px;">
+
+    <h1>
+        {{ location.location_name }}
+    </h1>
+
+
+    <p>
+        📍 Latitude:
+        {{ location.latitude }}
+    </p>
+
+    <p>
+        📍 Longitude:
+        {{ location.longitude }}
+    </p>
+
+    <p>
+        🛣 Road Type:
+        {{ location.road_type }}
+    </p>
+
+    <p>
+        🚗 Speed Limit:
+        {{ location.speed_limit }} mph
+    </p>
+
+    <p>
+        📊 Traffic Volume:
+        {{ location.aadt }}
+    </p>
+
+    <p>
+        💥 Historical Crashes:
+        {{ location.historical_crashes_2yr }}
+    </p>
+
+    <p>
+        🌦 Weather:
+        {{ location.weather }}
+    </p>
+
+    <p>
+        👁 Visibility:
+        {{ location.visibility_miles }} miles
+    </p>
+
+    <h2>{{ location.location_name }}</h2>
+
+<p>Road Type: {{ location.road_type }}</p>
+<p>Crashes (2yr): {{ location.historical_crashes_2yr }}</p>
+<p>AADT: {{ location.aadt }}</p>
+
+
+
+
+
+    <a href="{% url 'dashboard' %}">
+        ← Back to Dashboard
+    </a>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+   
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: #00ccff;
+      padding: 15px 25px;
+      gap: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      background: #00ccff;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(0,0,0,0.1);
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 800;
+      color: #222;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    .brand:hover {
+      background: rgba(0,0,0,0.1);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      margin-top: 120px;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #333;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #666;
+    }
+
+    input[type="submit"] {
+      background: #00ccff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.2s;
+      border: 1px solid #070e0f;
+      
+    }
+
+    input[type="submit"]:hover {
+      background: #00b8e6;
+    }
+
+    /* TrafficAI Dashboard */
+
+
+
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.location-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.location-card h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.info {
+    margin: 8px 0;
+    color: #444;
+}
+
+
+/* Risk Labels */
+
+.risk {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.high {
+    background-color: #ffcccc;
+    color: #b30000;
+}
+
+.medium {
+    background-color: #fff2cc;
+    color: #996600;
+}
+
+.low {
+    background-color: #ccffcc;
+    color: #006600;
+}
+
+
+/* Dashboard total count */
+
+.dashboard-count {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* SEARCH BAR */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+#locationSearch {
+    width: 60%;
+    max-width: 600px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #00ccff;
+    border-radius: 25px;
+    outline: none;
+    background: white;
+    transition: 0.2s ease;
+}
+
+#locationSearch:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 8px rgba(0, 119, 255, 0.3);
+}
+
+#locationSearch::placeholder {
+    color: #777;
+}
+
+#map {
+    width: 90%;
+    height: 450px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

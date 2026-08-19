@@ -1,0 +1,21 @@
+location_name,latitude,longitude,speed_limit,road_type,lanes,aadt,rush_hour,historical_crashes_2yr
+I-66 Exit 53,38.8624,-77.3568,65,Highway Interchange,8,104000,Morning,67
+I-395 & Seminary Rd Interchange,38.8195,-77.1055,55,Highway Interchange,8,110000,Morning,68
+Route 28 & Waxpool Rd,39.0206,-77.4313,55,Highway Interchange,8,89000,Morning,55
+11th St Bridge Approach DC,38.8725,-76.9945,55,Highway Interchange,8,90000,Evening,65
+Dulles Greenway Toll Plaza,39.0209,-77.4598,65,Toll Road,10,97000,Morning,26
+Route 50 & Stonecroft Blvd,38.9008,-77.5124,45,Major Arterial,6,52000,Evening,37
+New York Ave & West Virginia Ave,38.9125,-76.9850,45,Major Arterial,6,65000,Morning,46
+Duke St & Van Dorn St Alexandria,38.8045,-77.1205,45,Major Arterial,6,70000,Morning,45
+Wisconsin Ave & Western Ave DC,38.9645,-77.0775,35,Major Arterial,6,58000,Evening,40
+Route 7 & Baron Cameron Ave,39.0184,-77.4289,45,Major Arterial,6,51000,Evening,39
+Algonkian Pkwy & Cascades Pkwy,39.0515,-77.3968,45,Major Arterial,4,31000,Evening,13
+Wiehle Ave & Reston Station Blvd,38.9470,-77.3400,35,Intersection,5,45000,Morning,9
+Ashburn Village Blvd & Waxpool Rd,39.0150,-77.5050,45,Intersection,5,42000,Morning,8
+Route 50 & Loudoun County Pkwy (South),38.9100,-77.5300,55,Intersection,8,85000,Evening,18
+Fairfax County Pkwy & Lawyers Rd,38.9500,-77.3000,55,Intersection,6,70000,Evening,14
+Mooreview Pkwy & Belmont Ridge Rd,39.0000,-77.5200,35,Intersection,4,18000,Afternoon,3
+Seven Corners, 38.8720564,-77.1552577,35,Urban Intersection,6,68000,Evening,72
+14th St NW & K St DC,38.9025,-77.0325,35,Urban Intersection,8,92000,Evening,70
+16th St NW & U St,38.9165,-77.0365,25,Urban Intersection,6,48000,Evening,34
+K Street NW & 17th St,38.9020,-77.0395,35,Urban Intersection,6,82000,Morning,57
