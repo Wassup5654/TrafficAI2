@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+venv/
+db.sqlite3
+*.pkl
+ml/traffic_training_data.csv
+.vscode/
