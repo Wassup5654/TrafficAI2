@@ -25,4 +25,4 @@ except Exception as e:
     print(f"ERROR: {type(e).__name__}: {e}")
     import traceback
     traceback.print_exc()
-    input("Press Enter to close...")  # keeps window open so you can read the error
+    sys.exit(1)

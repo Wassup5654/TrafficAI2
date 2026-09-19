@@ -9,6 +9,9 @@ load_dotenv()
 def get_traffic_data(latitude, longitude):
 
     api_key = os.getenv("HERE_API_KEY")
+    if not api_key:
+        print("HERE_API_KEY is not configured. Skipping traffic API request.")
+        return None
 
     here_url = "https://data.traffic.hereapi.com/v7/flow"
 

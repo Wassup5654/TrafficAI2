@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 load_dotenv(BASE_DIR / ".env")
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY") or os.getenv("SESSION_SECRET")
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -122,5 +122,3 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 LOGIN_URL = '/login/'
-
-print("BOTTOM SECRET:", repr(SECRET_KEY))
