@@ -96,7 +96,7 @@ def register_view(request):
 
 
 # Dashboard
-@login_required
+
 def dashboard(request):
     locations = Location.objects.all()
 
@@ -130,7 +130,7 @@ def dashboard(request):
 
 
 # Location detail
-@login_required
+
 def location_detail(request, location_id):
 
     # Only show the last 24 hours on the graph
