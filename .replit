@@ -13,15 +13,10 @@ runButton = "Project"
 [[workflows.workflow]]
 name = "Project"
 mode = "parallel"
-author = "agent"
 
 [[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "TrafficAI scheduler"
-
-[[workflows.workflow]]
-name = "TrafficAI scheduler"
-author = "agent"
+task = "shell.exec"
+args = "python manage.py runserver 0.0.0.0:8000"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
@@ -30,5 +25,4 @@ args = "python scripts/run_scheduler.py"
 [workflows.workflow.metadata]
 outputType = "console"
 
-run = "python manage.py runserver 0.0.0.0:8000"
 entrypoint = "manage.py"
