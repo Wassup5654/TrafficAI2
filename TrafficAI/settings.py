@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'predictions',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.replit.dev",
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
