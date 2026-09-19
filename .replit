@@ -6,3 +6,26 @@ packages = ["glibcLocales"]
 
 [agent]
 expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "TrafficAI scheduler"
+
+[[workflows.workflow]]
+name = "TrafficAI scheduler"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python scripts/run_scheduler.py"
+
+[workflows.workflow.metadata]
+outputType = "console"
