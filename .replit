@@ -33,5 +33,5 @@ outputType = "console"
 run = "python manage.py runserver 0.0.0.0:8000"
 entrypoint = "manage.py"
 
-[depolyment]
+[deployment]
 run = "python manage.py runserver 0.0.0.0:8000"
