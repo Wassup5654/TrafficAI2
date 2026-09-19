@@ -4,48 +4,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - TrafficAI</title>
+  <title>Login · TrafficAI</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'website/styles.css' %}">
-  <style>
-    .login-box {
-      width: 300px;
-      margin: 100px auto;
-      padding: 50px;
-      background: #00ccff;
-      border-radius: 10px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
 </head>
 <body>
 
   <div class="navbar">
+    <a class="brand" href="/">🚗 TrafficAI</a>
     <div class="nav-links">
       <a href="/">Home</a>
       <a href="/dashboard/">Dashboard</a>
       <a href="/login/">Login</a>
       <a href="/register/">Register</a>
-      <a class="brand" href="/">TrafficAI 🚗</a>
     </div>
   </div>
 
-  <div class="login-box">
-    <h1>Login to TrafficAI</h1>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>Welcome back</h1>
+      <p class="sub">Log in to access your TrafficAI dashboard.</p>
 
-    {% if error_message %}
-      <p style="color: red;">{{ error_message }}</p>
-    {% endif %}
+      {% if error_message %}
+        <div class="auth-error">{{ error_message }}</div>
+      {% endif %}
 
-    <form method="post">
-      {% csrf_token %}
-       <input type="hidden" name="next" value="{{ request.GET.next }}">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="username" required><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <input type="submit" value="Login">
-    </form>
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ request.GET.next }}">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="username" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="auth-btn">Login</button>
+      </form>
+
+      <p class="auth-foot">New here? <a href="/register/">Create an account</a></p>
+    </div>
   </div>
 
 </body>

@@ -2,7 +2,8 @@
 __pycache__/
 *.pyc
 venv/
-db.sqlite3
+*.sqlite3
 *.pkl
 ml/traffic_training_data.csv
 .vscode/
+.venv/
